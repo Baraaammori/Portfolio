@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+html {
+  scroll-behavior: smooth;
+}
+
 .clip-star {
   clip-path: polygon(
     50% 0%,

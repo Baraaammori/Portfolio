@@ -1,7 +1,7 @@
 import Card from "../components/Card";
 function Services() {
   return (
-    <section id="services" className=" h-[100vh] flex flex-col justify-center bg-black" >   
+    <section id="services" className="min-h-auto md:min-h-screen flex flex-col justify-center bg-black py-12 md:py-0" >   
     <div>
         <h2 className="text-4xl font-bold text-center text-white mb-8">Services</h2>
         <p className="text-center text-gray-400 max-w-2xl mx-auto mb-12">

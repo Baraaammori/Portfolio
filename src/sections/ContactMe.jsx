@@ -4,7 +4,7 @@ import Input from "../components/Input";
 
 function ContactMe() {
   return (
-    <section className="w-full  flex flex-col justify-center items-center  text-white px-4">
+    <section id="contact" className="w-full  flex flex-col justify-center items-center  text-white px-4">
          <div>
         <h2 className="text-4xl font-bold text-center text-white mb-8">Contact Me</h2>
         <p className="text-center text-gray-400 max-w-2xl mx-auto mb-12">
