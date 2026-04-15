@@ -4,37 +4,37 @@ import { Layers, Database, Code2, Server, Terminal, Wrench, Languages, Cpu } fro
 const skillsData = [
   {
     title: "Frontend",
-    icon: <Layers className="text-cyan-400 mb-4" size={32} strokeWidth={1.5} />,
+    icon: <Layers className="text-cyan-400" size={32} strokeWidth={1.5} />,
     items: ["React.js", "Vue.js", "Next.js", "HTML5", "CSS3", "Tailwind CSS", "Vite", "TanStack Query", "Zustand", "Responsive Design"]
   },
   {
     title: "Backend",
-    icon: <Server className="text-blue-400 mb-4" size={32} strokeWidth={1.5} />,
+    icon: <Server className="text-blue-400" size={32} strokeWidth={1.5} />,
     items: ["Node.js", "Express.js", "NestJS", "Python", "Flask", "Django", "FastAPI", "REST API Design"]
   },
   {
     title: "Languages",
-    icon: <Code2 className="text-purple-400 mb-4" size={32} strokeWidth={1.5} />,
+    icon: <Code2 className="text-purple-400" size={32} strokeWidth={1.5} />,
     items: ["JavaScript (ES6+)", "TypeScript", "Python", "PHP"]
   },
   {
     title: "Databases",
-    icon: <Database className="text-emerald-400 mb-4" size={32} strokeWidth={1.5} />,
+    icon: <Database className="text-emerald-400" size={32} strokeWidth={1.5} />,
     items: ["PostgreSQL", "MongoDB", "MySQL", "Supabase", "Local Storage API"]
   },
   {
     title: "Tools & DevOps",
-    icon: <Terminal className="text-amber-400 mb-4" size={32} strokeWidth={1.5} />,
+    icon: <Terminal className="text-amber-400" size={32} strokeWidth={1.5} />,
     items: ["Git & GitHub", "npm", "CI/CD (Vercel, Render)", "VS Code"]
   },
   {
     title: "Architecture",
-    icon: <Wrench className="text-rose-400 mb-4" size={32} strokeWidth={1.5} />,
+    icon: <Wrench className="text-rose-400" size={32} strokeWidth={1.5} />,
     items: ["JWT Authentication", "RBAC", "SSR/CSR/SSG", "SOLID Principles", "Clean Architecture", "MVC", "Agile/Scrum"]
   },
   {
     title: "Specialized",
-    icon: <Cpu className="text-pink-400 mb-4" size={32} strokeWidth={1.5} />,
+    icon: <Cpu className="text-pink-400" size={32} strokeWidth={1.5} />,
     items: ["AI Integration (Models & APIs)", "Component-Based Architecture", "Algorithm Design"]
   }
 ];
