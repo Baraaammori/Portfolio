@@ -27,12 +27,12 @@ function HeroLeft() {
            </div>
            
            <div className="buttons flex flex-col sm:flex-row gap-4 relative z-10 mt-4">
-            <button className="bg-cyan-500 hover:bg-cyan-400 text-white shadow-lg shadow-cyan-500/20 border-none rounded-full px-8 py-3 text-sm md:text-base font-semibold transform hover:-translate-y-1 transition-all duration-300">
+            <a href="#projects" className="bg-cyan-500 hover:bg-cyan-400 text-white shadow-lg shadow-cyan-500/20 border-none rounded-full px-8 py-3 text-sm md:text-base font-semibold transform hover:-translate-y-1 transition-all duration-300 text-center">
                 Explore My Work
-            </button>
-            <button className="glass-panel text-white hover:bg-slate-700/50 rounded-full px-8 py-3 text-sm md:text-base font-semibold transform hover:-translate-y-1 transition-all duration-300">
+            </a>
+            <a href="/Baraa_Ammori_CV.pdf" download="Baraa_Ammori_CV.pdf" className="glass-panel text-white hover:bg-slate-700/50 rounded-full px-8 py-3 text-sm md:text-base font-semibold transform hover:-translate-y-1 transition-all duration-300 text-center">
                 Download CV
-            </button>
+            </a>
            </div>
 
            <div className="info glass-panel rounded-2xl flex flex-row flex-wrap border border-slate-700/50 gap-4 mt-8 w-full md:max-w-2xl relative z-10 divide-x divide-slate-700/50">

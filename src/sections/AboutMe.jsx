@@ -46,9 +46,9 @@ function AboutMe() {
                 I focus on writing clean, maintainable code and building well-structured applications using modern web technologies like <span className="text-cyan-400 font-medium">React, Next.js, Node.js</span>, and <span className="text-blue-400 font-medium">PostgreSQL</span>. I care strongly about performance, reliability, and creating scalable solutions that outlast trends.
             </p>
               <div className="mt-4">
-                <button className="bg-cyan-500 hover:bg-cyan-400 text-white px-8 py-3 rounded-full font-semibold shadow-lg shadow-cyan-500/20 transform hover:-translate-y-1 transition-all duration-300 text-sm md:text-base">
+                <a href="/Baraa_Ammori_CV.pdf" download="Baraa_Ammori_CV.pdf" className="inline-block bg-cyan-500 hover:bg-cyan-400 text-white px-8 py-3 rounded-full font-semibold shadow-lg shadow-cyan-500/20 transform hover:-translate-y-1 transition-all duration-300 text-sm md:text-base text-center">
                   Download CV
-                </button>
+                </a>
               </div>
         </div>
 
