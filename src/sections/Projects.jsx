@@ -16,7 +16,7 @@ function Projects() {
           title="Algorithms Game" 
           description="Educational game teaching BFS, A*, and Q-Learning algorithms through interactive mazes and challenges."
           technologies={["React", "JavaScript", "AI"]}
-          link="https://github.com/Baraaammori/algorithms-game"
+          link="https://ai-puzzle-maze.vercel.app"
         />
         
         <ProjectCard 
