@@ -2,7 +2,7 @@ import { Instagram, Linkedin, Dribbble, Github } from "lucide-react";
 
 export default function SocialIcons() {
   const socialLinks = [
-    { Icon: Instagram, href: "#" },
+    { Icon: Instagram, href: "https://www.instagram.com/baraa_ammori1?igsh=b2c0aHFsNGp0dGtt&utm_source=qr" },
     { Icon: Linkedin, href: "https://www.linkedin.com/in/baraa-ammori/" },
     { Icon: Dribbble, href: "#" },
     { Icon: Github, href: "https://github.com/Baraaammori" }
