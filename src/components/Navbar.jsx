@@ -19,9 +19,14 @@ function Navbar() {
               </li>
             ))}
           </ul>
-          <button className="bg-cyan-500 hover:bg-cyan-400 text-white px-6 md:px-8 py-2.5 rounded-full font-medium shadow-lg shadow-cyan-500/20 transform hover:-translate-y-0.5 transition-all duration-300 text-sm md:text-base">
+          <a 
+            href="https://wa.me/96181629778" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="bg-cyan-500 hover:bg-cyan-400 text-white px-6 md:px-8 py-2.5 rounded-full font-medium shadow-lg shadow-cyan-500/20 transform hover:-translate-y-0.5 transition-all duration-300 text-sm md:text-base inline-block text-center"
+          >
             Hire Me
-          </button>
+          </a>
         </div>
       </div>
     </nav>
