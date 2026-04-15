@@ -7,7 +7,7 @@ function Navbar() {
             Baraa
           </h1>
           <ul className="hidden md:flex space-x-8">
-            {['Home', 'About', 'Services', 'Projects', 'Contact'].map((item) => (
+            {['Home', 'About', 'Services', 'Skills', 'Projects', 'Contact'].map((item) => (
               <li key={item}>
                 <a 
                   href={`#${item.toLowerCase().replace(' ', '-')}`} 

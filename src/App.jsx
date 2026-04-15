@@ -2,6 +2,7 @@ import Navbar from './components/Navbar'
 import Hero from './sections/HeroC'
 import Services from './sections/Services'
 import AboutMe from './sections/AboutMe'
+import Skills from './sections/Skills'
 import Projects from './sections/Projects'
 import ContactMe from './sections/ContactMe'
 import Footer from './components/Footer'
@@ -15,6 +16,7 @@ function App() {
         <Hero />
         <Services />
         <AboutMe />
+        <Skills />
         <Projects />
         <ContactMe />
       </div>
