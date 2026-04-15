@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Input from "../components/Input";
+import emailjs from '@emailjs/browser';
 
 function ContactMe() {
   const [formData, setFormData] = useState({
@@ -9,21 +10,44 @@ function ContactMe() {
     timeline: '',
     details: ''
   });
+  
+  const [status, setStatus] = useState(''); // '' | 'sending' | 'success' | 'error'
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleMailTo = (e) => {
+  const handleEmailJS = (e) => {
     e.preventDefault();
-    const { name, email, phone, timeline, details } = formData;
+    setStatus('sending');
     
-    // Construct the email body
-    const subject = encodeURIComponent(`Portfolio Inquiry from ${name}`);
-    const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\nPhone: ${phone}\nTimeline: ${timeline}\n\nProject Details:\n${details}`);
+    // EmailJS Credentials
+    const serviceId = 'service_z1tm7q2';
+    const templateId = 'template_blj9q5h'; 
+    const publicKey = 'HdtulPjorVs_wqiel'; 
     
-    // Open user's default email client
-    window.location.href = `mailto:baraaammori2004@gmail.com?subject=${subject}&body=${body}`;
+    // Ensure these keys match the {{variables}} inside your EmailJS Template
+    const templateParams = {
+      name: formData.name,
+      email: formData.email,
+      phone: formData.phone,
+      timeline: formData.timeline,
+      message: formData.details,
+    };
+    
+    emailjs.send(serviceId, templateId, templateParams, publicKey)
+      .then((response) => {
+        console.log('SUCCESS!', response.status, response.text);
+        setStatus('success');
+        setFormData({ name: '', email: '', phone: '', timeline: '', details: '' });
+        
+        // Reset success message after 5 seconds
+        setTimeout(() => setStatus(''), 5000);
+      })
+      .catch((err) => {
+        console.error('FAILED...', err);
+        setStatus('error');
+      });
   };
 
   return (
@@ -36,7 +60,7 @@ function ContactMe() {
         </p>         
     </div>
     <div className="w-full flex justify-center items-center">
-      <form className="w-full max-w-4xl glass-panel p-8 rounded-3xl" onSubmit={handleMailTo}>
+      <form className="w-full max-w-4xl glass-panel p-8 rounded-3xl" onSubmit={handleEmailJS}>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <Input name="name" value={formData.name} onChange={handleChange} text="Your Name" />
           <Input name="email" value={formData.email} onChange={handleChange} text="Email Address" />
@@ -46,9 +70,29 @@ function ContactMe() {
             <Input name="details" value={formData.details} onChange={handleChange} text="Project Details" className="h-full min-h-[160px]" isTextArea={true} />
           </div>
         </div>
+        
+        {status === 'success' && (
+          <div className="mt-6 p-4 bg-green-500/10 border border-green-500/20 text-green-400 rounded-lg text-center font-medium">
+            Message sent successfully! I'll get back to you soon.
+          </div>
+        )}
+        
+        {status === 'error' && (
+          <div className="mt-6 p-4 bg-red-500/10 border border-red-500/20 text-red-400 rounded-lg text-center font-medium">
+            Something went wrong. Please check your EmailJS configuration.
+          </div>
+        )}
+
         <div className="w-full flex justify-center mt-8">
-            <button type="submit" className="bg-cyan-500 hover:bg-cyan-400 text-white px-10 py-3.5 rounded-full font-bold shadow-lg shadow-cyan-500/20 transform hover:-translate-y-1 transition-all duration-300 w-full sm:w-auto">
-                Send Message
+            <button 
+              type="submit" 
+              disabled={status === 'sending'}
+              className={`text-white px-10 py-3.5 rounded-full font-bold shadow-lg transform transition-all duration-300 w-full sm:w-auto
+                ${status === 'sending' 
+                  ? 'bg-slate-600 cursor-not-allowed overflow-hidden' 
+                  : 'bg-cyan-500 hover:bg-cyan-400 shadow-cyan-500/20 hover:-translate-y-1'}`}
+            >
+                {status === 'sending' ? 'Sending...' : 'Send Message'}
             </button>
         </div>
       </form>
