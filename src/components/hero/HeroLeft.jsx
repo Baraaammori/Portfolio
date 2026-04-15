@@ -27,7 +27,7 @@ function HeroLeft() {
            </div>
            
            <div className="buttons flex flex-col sm:flex-row gap-4 relative z-10 mt-4">
-            <button className="bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-white shadow-lg shadow-cyan-500/20 border-none rounded-full px-8 py-3 text-sm md:text-base font-semibold transform hover:-translate-y-1 transition-all duration-300">
+            <button className="bg-cyan-500 hover:bg-cyan-400 text-white shadow-lg shadow-cyan-500/20 border-none rounded-full px-8 py-3 text-sm md:text-base font-semibold transform hover:-translate-y-1 transition-all duration-300">
                 Explore My Work
             </button>
             <button className="glass-panel text-white hover:bg-slate-700/50 rounded-full px-8 py-3 text-sm md:text-base font-semibold transform hover:-translate-y-1 transition-all duration-300">

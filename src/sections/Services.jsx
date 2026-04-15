@@ -12,12 +12,12 @@ function Services() {
 
     <div className="cards grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-5 sm:px-6 lg:px-8 max-w-7xl mx-auto justify-items-center w-full">
 
-        <Card title="Frontend Development" description="Modern, responsive, and highly interactive user interfaces perfectly tailored to your brand." />
-        <Card title="React Development" description="Complex single-page applications optimized for speed and dynamic user experiences." />
-        <Card title="Backend Architecture" description="Robust APIs, server-side logic, and secure authentication systems built to scale." />
-        <Card title="Database Management" description="Optimized relational and non-relational database design and queries for high performance." />  
-        <Card title="Full-Stack Solutions" description="End-to-end web applications managing everything from the database to the deployment." />
-        <Card title="API Integration" description="Connecting systems with seamless third-party service integration and microservices." />
+        <Card title="Frontend Development" description="Modern, responsive, and highly interactive user interfaces perfectly tailored to your brand." iconName="Monitor" />
+        <Card title="React Development" description="Complex single-page applications optimized for speed and dynamic user experiences." iconName="Code" />
+        <Card title="Backend Architecture" description="Robust APIs, server-side logic, and secure authentication systems built to scale." iconName="Server" />
+        <Card title="Database Management" description="Optimized relational and non-relational database design and queries for high performance." iconName="Database" />  
+        <Card title="Full-Stack Solutions" description="End-to-end web applications managing everything from the database to the deployment." iconName="Layers" />
+        <Card title="API Integration" description="Connecting systems with seamless third-party service integration and microservices." iconName="Workflow" />
 
     </div>
 

@@ -19,7 +19,7 @@ function Navbar() {
               </li>
             ))}
           </ul>
-          <button className="bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-white px-6 md:px-8 py-2.5 rounded-full font-medium shadow-lg shadow-cyan-500/20 transform hover:-translate-y-0.5 transition-all duration-300 text-sm md:text-base">
+          <button className="bg-cyan-500 hover:bg-cyan-400 text-white px-6 md:px-8 py-2.5 rounded-full font-medium shadow-lg shadow-cyan-500/20 transform hover:-translate-y-0.5 transition-all duration-300 text-sm md:text-base">
             Hire Me
           </button>
         </div>

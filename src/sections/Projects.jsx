@@ -135,7 +135,7 @@ function Projects() {
                 onClick={() => setCurrentPage(i + 1)}
                 className={`w-10 h-10 rounded-full font-bold transition-all ${
                   currentPage === i + 1 
-                    ? 'bg-gradient-to-r from-cyan-500 to-blue-600 text-white shadow-lg shadow-cyan-500/20' 
+                    ? 'bg-cyan-500 text-slate-900 shadow-lg shadow-cyan-500/20' 
                     : 'bg-slate-800 text-slate-400 hover:bg-slate-700'
                 }`}
               >

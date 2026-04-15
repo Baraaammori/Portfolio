@@ -21,7 +21,7 @@ function ContactMe() {
           </div>
         </div>
         <div className="w-full flex justify-center mt-8">
-            <button className="bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-white px-10 py-3.5 rounded-full font-bold shadow-lg shadow-cyan-500/20 transform hover:-translate-y-1 transition-all duration-300 w-full sm:w-auto">
+            <button className="bg-cyan-500 hover:bg-cyan-400 text-white px-10 py-3.5 rounded-full font-bold shadow-lg shadow-cyan-500/20 transform hover:-translate-y-1 transition-all duration-300 w-full sm:w-auto">
                 Send Message
             </button>
         </div>
