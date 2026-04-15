@@ -9,7 +9,7 @@ function App() {
 
 
   return (
-    <div className="App bg-black overflow-x-hidden">
+    <div className="App min-h-screen">
      <Navbar />
       <div className="flex flex-col gap-8 md:gap-0">
         <Hero />
